@@ -42,10 +42,15 @@ class CalculateViewController: UIViewController {
     }
     
     @IBAction func stepperValueShanged(_ sender: UIStepper) {
+     
+     
+        splitNumberLabel.text = String(Int (sender.value))
+        
     }
     
     
     @IBAction func calculatePressed(_ sender: UIButton) {
+        print( splitNumberLabel.text!)
     }
     
 //    override func viewDidLoad() {
